@@ -4,7 +4,6 @@
 
 namespace Src\models;
 
-
 class User extends Model
 {
     protected static string $tableName = 'users';
