@@ -1,0 +1,17 @@
+{
+    "name": "allanrodriguesmachado/beat-the-dot",
+    "description": "Project Beat The Dot",
+    "authors": [
+        {
+            "name": "Allan Rodrigues",
+            "email": "allanrodriguesdeveloper@hotmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    }
+}
