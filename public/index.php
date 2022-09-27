@@ -1,15 +1,16 @@
 <?php
 
+use Src\models\User;
+
 require_once "../vendor/autoload.php";
 
-use Src\config\Database;
+//require_once(dirname(__FILE__, 2) . '/src/config/config.php');
+//require_once(dirname(__FILE__, 2) . '/src/models/User.php');
 
-//require_once(dirname(__FILE__, 2) . '/src/config/Database.php');
+$user = new User([
+    'name' => 'Allan',
+    'email' => 'allan@php.com.br'
+]);
 
-$sql = 'SELECT * FROM users';
-
-$dataBase = Database::getResultFromQuery($sql);
-
-while ($row = $dataBase->fetch_assoc()) {
-    dd($row);
-}
+print_r($user);
+echo ' - FIM';

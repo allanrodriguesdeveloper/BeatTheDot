@@ -1,8 +1,8 @@
 <?php
 
-namespace Src\config;
+//namespace Src\config;
 
-use mysqli;
+//use mysqli;
 
 class Database
 {
@@ -28,10 +28,9 @@ class Database
         return $coon;
     }
 
-    /*
-     * RESULT SET
+    /**
+     * Consulta no banco de dados
      */
-
     public static function getResultFromQuery($sql) {
         $conn = self::getConnection();
         $result  = $conn->query($sql);
