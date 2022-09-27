@@ -8,10 +8,15 @@
             "role": "Developer"
         }
     ],
-    "require": {},
+    "require": {
+        "symfony/debug": "^4.4"
+    },
     "autoload": {
         "psr-4": {
             "Src\\": "src/"
         }
+    },
+    "require-dev": {
+        "symfony/debug-bundle": "^5.4"
     }
 }
