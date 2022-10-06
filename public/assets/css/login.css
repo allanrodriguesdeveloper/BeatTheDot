@@ -9,7 +9,6 @@ body {
 
 .form-login {
     flex-basis: 450px;
-
 }
 
 .card-header {
@@ -27,10 +26,11 @@ body {
 .card-footer {
     display: flex;
     justify-content: flex-end;
-
     background-color: rgba(0, 0, 0, 0.94);
 }
 
-i{
-
+.form-control:focus {
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
