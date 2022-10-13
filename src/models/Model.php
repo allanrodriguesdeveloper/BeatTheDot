@@ -48,6 +48,13 @@ class Model
         return $objects;
     }
 
+    public static function getOne(array $filters = [], string $columns = '*')
+    {
+        $class = get_called_class();
+        $result = static::getResultSetFromSelect($filters, $columns);
+        return $result ? new $class($result->fetch_assoc()) : null;
+    }
+
     public static function getResultSetFromSelect(array $filters = [], string $columns = '*')
     {
         $sql = sprintf("SELECT %s FROM " . static::$tableName . static::getFilters($filters), $columns);
