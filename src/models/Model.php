@@ -10,23 +10,31 @@ class Model
     protected static array $columns = [];
     protected array $values = [];
 
-    public function __construct(array $arr)
+    function __construct($arr, $sanitize = true)
     {
-        $this->loadFromArray($arr);
+        $this->loadFromArray($arr, $sanitize);
     }
 
-    public function loadFromArray(array $arr)
+    public function loadFromArray($arr, $sanitize = true)
     {
         if ($arr) {
+            // $conn = Database::getConnection();
             foreach ($arr as $key => $value) {
-                $this->$key = $value;
+                $cleanValue = $value;
+                if ($sanitize && isset($cleanValue)) {
+                    $cleanValue = strip_tags(trim($cleanValue));
+                    $cleanValue = htmlentities($cleanValue, ENT_NOQUOTES);
+                    // $cleanValue = mysqli_real_escape_string($conn, $cleanValue);
+                }
+                $this->$key = $cleanValue;
             }
+            // $conn->close();
         }
     }
 
     public function __get($key)
     {
-        return $this->values;
+        return $this->values[$key];
     }
 
     public function __set($key, $value)
@@ -34,7 +42,19 @@ class Model
         $this->values[$key] = $value;
     }
 
-    public static function get(array $filters = [], string $columns = '*'): array
+    public function getValues(): array
+    {
+        return $this->values;
+    }
+
+    public static function getOne($filters = [], $columns = '*')
+    {
+        $class = get_called_class();
+        $result = static::getResultSetFromSelect($filters, $columns);
+        return $result ? new $class($result->fetch_assoc()) : null;
+    }
+
+    public static function get($filters = [], $columns = '*'): array
     {
         $objects = [];
         $result = static::getResultSetFromSelect($filters, $columns);
@@ -42,45 +62,77 @@ class Model
             $class = get_called_class();
             while ($row = $result->fetch_assoc()) {
                 $objects[] = new $class($row);
+//                array_push($objects, new $class($row));
             }
         }
-
         return $objects;
     }
 
-    public static function getOne(array $filters = [], string $columns = '*')
+    public static function getResultSetFromSelect($filters = [], $columns = '*')
     {
-        $class = get_called_class();
-        $result = static::getResultSetFromSelect($filters, $columns);
-        return $result ? new $class($result->fetch_assoc()) : null;
-    }
-
-    public static function getResultSetFromSelect(array $filters = [], string $columns = '*')
-    {
-        $sql = sprintf("SELECT %s FROM " . static::$tableName . static::getFilters($filters), $columns);
+        $sql = "SELECT ${columns} FROM "
+            . static::$tableName
+            . static::getFilters($filters);
         $result = Database::getResultFromQuery($sql);
-
         if ($result->num_rows === 0) {
             return null;
+        } else {
+            return $result;
         }
-        return $result;
     }
 
-    private static function getFilters(array $filters): string
+    public function insert()
     {
-        $filterData = [];
-        $filterData['name'] = sprintf('name = \'%s\'', 'usuario1');
-        $filterData['email'] = sprintf('email = \'%s\'', 'usuario1@uniponto.com.br');
+        $sql = "INSERT INTO " . static::$tableName . " ("
+            . implode(",", static::$columns) . ") VALUES (";
+        foreach (static::$columns as $col) {
+            $sql .= static::getFormatedValue($this->$col) . ",";
+        }
+        $sql[strlen($sql) - 1] = ')';
+        $id = Database::executeSQL($sql);
+        $this->id = $id;
+    }
 
+    public function update()
+    {
+        $sql = "UPDATE " . static::$tableName . " SET ";
+        foreach (static::$columns as $col) {
+            $sql .= " ${col} = " . static::getFormatedValue($this->$col) . ",";
+        }
+        $sql[strlen($sql) - 1] = ' ';
+        $sql .= "WHERE id = {$this->id}";
+        Database::executeSQL($sql);
+    }
+
+    public static function getCount($filters = [])
+    {
+        $result = static::getResultSetFromSelect(
+            $filters, 'count(*) as count');
+        return $result->fetch_assoc()['count'];
+    }
+
+    public function delete()
+    {
+        static::deleteById($this->id);
+    }
+
+    public static function deleteById($id)
+    {
+        $sql = "DELETE FROM " . static::$tableName . " WHERE id = {$id}";
+        Database::executeSQL($sql);
+    }
+
+    private static function getFilters($filters): string
+    {
         $sql = '';
         if (count($filters) > 0) {
-            $parameters = "WHERE " . join(" AND ", $filterData);
-            $sql = sprintf(' %s', $parameters);
-
-//            $sql .= " WHERE 1 = 1";
-//            foreach ($filters as $columns => $value) {
-//                $sql .= sprintf(" AND %s = %s", $columns, static::getFormattedValue($value));
-//            }
+            $sql .= " WHERE 1 = 1";
+            foreach ($filters as $column => $value) {
+                if ($column == 'raw') {
+                    $sql .= " AND {$value}";
+                }
+                $sql .= " AND ${column} = " . static::getFormattedValue($value);
+            }
         }
         return $sql;
     }
@@ -90,11 +142,9 @@ class Model
         if (is_null($value)) {
             return "null";
         }
-
-        if (gettype($value) == 'string') {
+        if (gettype($value) === 'string') {
             return "'${value}'";
         }
-
         return $value;
     }
 }

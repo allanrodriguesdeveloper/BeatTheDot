@@ -10,7 +10,8 @@
     ],
     "require": {
         "symfony/debug": "^4.4",
-      "ext-mysqli": "*"
+      "ext-mysqli": "*",
+      "ext-cassandra": "*"
     },
     "autoload": {
         "psr-4": {
