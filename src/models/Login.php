@@ -1,7 +1,5 @@
 <?php
 
-//require_once (realpath(MODEL_PATH . '/User.php'));
-
 namespace Src\models;
 
 use Exception;
