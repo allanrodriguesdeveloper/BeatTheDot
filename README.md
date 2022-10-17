@@ -1,3 +1,3 @@
 <h1 align="center">
-  <img alt="dtmoney" title="dtmoney" src="https://github.com/allanrodriguesmachado/dtmoney/blob/main/src/assets/logo.svg" width="220px" />
+  <img alt="UniPonto" title="UniPonto" src="https://github.com/allanrodriguesmachado/UniPonto/blob/main/.github/favicon.png" width="50px" /> UniPonto
 </h1>
