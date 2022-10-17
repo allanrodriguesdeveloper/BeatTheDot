@@ -3,6 +3,8 @@
 use Src\exceptions\AppException;
 use Src\models\Login;
 
+$exception = null;
+
 //loadModel('login');
 
 if (count($_POST) > 0) {
@@ -10,9 +12,9 @@ if (count($_POST) > 0) {
     try {
         $user = $login->checkLogin();
         echo "Usuario logado {$user->name}";
-    } catch (AppException $exception) {
-        echo $exception->getMessage();
+    } catch (AppException $e) {
+        $exception = $e;
     }
 }
 
-loadView('login');
+loadView('login', $_POST + ['exception' => $exception]);
