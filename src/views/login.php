@@ -24,7 +24,7 @@
         <div class="card-body">
             <div class="form-group">
                 <label for="email">Matricula</label>
-                <input type="email" name="email" id="email" class="form-control border-0" placeholder="Digite sua Matricula" autofocus>
+                <input value="<?= $_POST['email'] ?>" type="email" name="email" id="email" class="form-control border-0" placeholder="Digite sua Matricula" autofocus>
             </div>
 
             <div class="form-group">
@@ -38,7 +38,5 @@
         </div>
     </div>
 </form>
-<?= $texto ?>
-
 </body>
 </html>
