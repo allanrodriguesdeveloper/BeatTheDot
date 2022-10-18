@@ -1,9 +1,5 @@
 <?php
 
-namespace Src\models;
-
-use Database;
-
 class Model
 {
     protected static string $tableName = '';

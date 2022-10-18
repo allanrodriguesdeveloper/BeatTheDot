@@ -1,9 +1,5 @@
 <?php
 
-namespace Src\models;
-
-use Exception;
-
 class Login extends Model
 {
 
