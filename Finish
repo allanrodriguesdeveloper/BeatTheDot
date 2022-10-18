@@ -1,0 +1,652 @@
+[33mcommit 571438a69f7d9d037a59e32e6e9adffdfa6885fc[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 17:05:17 2022 -0300
+
+    :godmode: Getting users from the database
+
+[33mcommit b059709452d6e212ac790fca0d1a414a6e07f2fa[m
+Merge: 5972927 9fb5825
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Tue Oct 18 16:40:10 2022 -0300
+
+    Merge pull request #20 from allanrodriguesmachado/structure
+    
+    Merge pull request #19 from allanrodriguesmachado/main
+
+[33mcommit 9fb582539eadf997b73a39ad535184a1d65a2aff[m
+Merge: 88dcc58 5972927
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Tue Oct 18 16:38:33 2022 -0300
+
+    Merge pull request #19 from allanrodriguesmachado/main
+    
+    Merge pull request #18 from allanrodriguesmachado/structure
+
+[33mcommit 597292706124fb2a7505df4410931683c9351afd[m
+Merge: 3cc9e3f 88dcc58
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Tue Oct 18 16:38:10 2022 -0300
+
+    Merge pull request #18 from allanrodriguesmachado/structure
+    
+    Structure
+
+[33mcommit 88dcc583e48657359729923892272b26494935ce[m
+Merge: 31fb216 3cc9e3f
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Tue Oct 18 16:37:36 2022 -0300
+
+    Merge pull request #17 from allanrodriguesmachado/main
+    
+    :godmode: Getting users from the database
+
+[33mcommit 3cc9e3fbdce916a48cb5dd2fe5cb40192cc6d096[m
+Merge: 6e0a130 c26636c
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 16:36:35 2022 -0300
+
+    Merge branch 'structure'
+
+[33mcommit c26636c0463ead46d163218d2ddaab89a41b5256[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 16:35:15 2022 -0300
+
+    :godmode: Getting users from the database
+
+[33mcommit 31fb2164353b951ad1f8cb4fb528bcd8b610d8b7[m
+Merge: 68558ee 6e0a130
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Tue Oct 18 16:05:37 2022 -0300
+
+    Merge pull request #16 from allanrodriguesmachado/main
+    
+    :godmode: Getting users from the database
+
+[33mcommit 6e0a130638993bec72f85af8d7a65083057694e3[m
+Merge: 55cba75 2a4c43d
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 16:04:23 2022 -0300
+
+    Merge branch 'structure'
+
+[33mcommit 2a4c43d55cadd6a0687bc02ee580557dbee80359[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 16:03:54 2022 -0300
+
+    ::godmode: Getting users from the database
+
+[33mcommit 55cba7550ea614aae93ce26a55ec962a6e176618[m
+Merge: e7dfa83 8dcfd1d
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 15:40:20 2022 -0300
+
+    Merge branch 'main' of https://github.com/allanrodriguesmachado/UniPonto
+
+[33mcommit 8dcfd1d04c5042b951c57b7772798a63fc3049c0[m
+Merge: 8091e55 68558ee
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Tue Oct 18 15:39:43 2022 -0300
+
+    Merge pull request #15 from allanrodriguesmachado/structure
+    
+    Merge pull request #14 from allanrodriguesmachado/main
+
+[33mcommit e7dfa83e0c3604334ae7e4a67da7933bb338b997[m
+Merge: 8091e55 e4f68e2
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 15:38:27 2022 -0300
+
+    Merge branch 'structure'
+
+[33mcommit e4f68e29aa83b9a69decfd940944a0b5d26c04b9[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 15:37:41 2022 -0300
+
+    :memo: Generation select command  #1
+
+[33mcommit 68558ee781f080b3ad088cb886238b18b67a5b3e[m
+Merge: 369a653 8091e55
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Tue Oct 18 14:58:09 2022 -0300
+
+    Merge pull request #14 from allanrodriguesmachado/main
+    
+    :memo: Class User #2
+
+[33mcommit 8091e55d6cc2bfbe3ace66bf880ef3be4ca8c1cd[m
+Merge: 9c86b26 b33c128
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 14:57:17 2022 -0300
+
+    Merge branch 'structure'
+
+[33mcommit b33c1286f6ecce8cc46c5c4a1773826f40d29976[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 14:56:46 2022 -0300
+
+    :memo: Class User #2
+
+[33mcommit 9c86b265c6d6f2cf706c778bde383a4288020ec9[m
+Merge: 329b39a 431fb33
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 14:32:20 2022 -0300
+
+    Merge branch 'main' of https://github.com/allanrodriguesmachado/UniPonto
+
+[33mcommit 431fb33be9b96f0068f59df2fa94a25db800e738[m
+Merge: 5213948 369a653
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Tue Oct 18 14:31:55 2022 -0300
+
+    Merge pull request #13 from allanrodriguesmachado/structure
+    
+    Merge pull request #12 from allanrodriguesmachado/main
+
+[33mcommit 369a653f2599880e2a9fc012bea4ddbf2cd2c228[m
+Merge: 5e4eeec 5213948
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Tue Oct 18 14:31:24 2022 -0300
+
+    Merge pull request #12 from allanrodriguesmachado/main
+    
+    🥇 Class User
+
+[33mcommit 329b39ada479b01c682881b0ae9d0c5341c6ecf1[m
+Merge: 5213948 f92d81d
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 14:30:44 2022 -0300
+
+    Merge branch 'structure'
+
+[33mcommit 5213948326a0b75cfb2a5c738e707495706c1d4d[m
+Merge: b4ac80e bc64270
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 14:30:14 2022 -0300
+
+    Merge branch 'main' of https://github.com/allanrodriguesmachado/UniPonto
+
+[33mcommit f92d81d63d0b366dd60b0bbba73e6c56d32cb132[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 14:29:47 2022 -0300
+
+    :memo: Class User #1
+
+[33mcommit bc6427016784c1f16c5f349250bd02a4de50a485[m
+Merge: 4a759c5 5e4eeec
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Tue Oct 18 13:46:16 2022 -0300
+
+    Merge pull request #11 from allanrodriguesmachado/structure
+    
+    Merge pull request #10 from allanrodriguesmachado/main
+
+[33mcommit b4ac80ee9166a28f6b67f18008b3872afc62760a[m
+Merge: 7bb2571 30323f4
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 13:45:53 2022 -0300
+
+    Merge branch 'main' into structure
+
+[33mcommit 7bb2571f3f45cf6a03bd207a79e7b03b5b79b4db[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 13:44:37 2022 -0300
+
+    :memo: Database Connection #2
+
+[33mcommit 5e4eeecabf01733be3595c98c19f530ff9da3499[m
+Merge: d7b8a97 4a759c5
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Tue Oct 18 13:20:17 2022 -0300
+
+    Merge pull request #10 from allanrodriguesmachado/main
+    
+    Merge pull request #9 from allanrodriguesmachado/structure
+
+[33mcommit 4a759c5ea395f77a305026fa4f7094007ba7ac8c[m
+Merge: 30323f4 d7b8a97
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Tue Oct 18 13:19:52 2022 -0300
+
+    Merge pull request #9 from allanrodriguesmachado/structure
+    
+    Merge pull request #8 from allanrodriguesmachado/main
+
+[33mcommit d7b8a9787679c0c7e9e24ab835febfe346e9f10f[m
+Merge: 8d97b25 30323f4
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Tue Oct 18 13:19:28 2022 -0300
+
+    Merge pull request #8 from allanrodriguesmachado/main
+    
+    :memo: Database Connection #2
+
+[33mcommit 30323f4d46500e513f8c63c67018767b78fa26b4[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 13:17:32 2022 -0300
+
+    :memo: Database Connection #2
+
+[33mcommit 7401e8c848493cd1c38e93281fd1e75b3dbf8db6[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 11:37:02 2022 -0300
+
+    :memo: Database Connection #1
+
+[33mcommit fda63c3c4f96a4853d537f1bae9aeb870593250a[m
+Merge: 2c2b339 8d97b25
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 11:31:39 2022 -0300
+
+    Merge branch 'structure'
+
+[33mcommit 8d97b258a3e64991875a5a67878fede40062868f[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 11:30:52 2022 -0300
+
+    :memo: Database Connection #1
+
+[33mcommit 2c2b339e67cc437764554526c9bfffa97f9baef9[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 10:51:39 2022 -0300
+
+    Refactory
+
+[33mcommit 3e731d25a4d22b4ff42cf12f39ac96524d83312b[m
+Merge: d789fac 173736d
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 10:50:18 2022 -0300
+
+    Initial Structure
+
+[33mcommit d789fac16c1dcc90726aea445ca0f88312293b90[m
+Merge: 3823a89 63d00be
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 10:48:56 2022 -0300
+
+    Merge branch 'main' of https://github.com/allanrodriguesmachado/UniPonto
+
+[33mcommit 173736dfbb979068f75238672ebf7caf86b7dbab[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Oct 18 10:48:24 2022 -0300
+
+    Initial Structure
+
+[33mcommit 63d00be38204f307d30c843c684195f8e5ab35d2[m
+Merge: c60281b a3c04c2
+Author: Allan Rodrigues <allan.rodrigues14@hotmail.com>
+Date:   Mon Oct 17 23:06:44 2022 -0300
+
+    Atualizando
+
+[33mcommit c60281bac3c04bae318f5d5fb5d2184e45012c45[m
+Author: Allan Rodrigues <allan.rodrigues14@hotmail.com>
+Date:   Mon Oct 17 23:05:57 2022 -0300
+
+    ATualizando
+
+[33mcommit 3823a890cf13bab99b952b5439a5f9cb0cc2fcb0[m
+Merge: 98a30f8 a3c04c2
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Mon Oct 17 11:48:34 2022 -0300
+
+    Merge branch 'main' of https://github.com/allanrodriguesmachado/UniPonto
+
+[33mcommit 98a30f823aff563a336401383f29d9418b73e888[m
+Merge: 58afe2b 728c967
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Mon Oct 17 11:48:21 2022 -0300
+
+    Merge branch 'login'
+
+[33mcommit a3c04c2551286ad1388caca5dbdfe97eb59dbb5c[m
+Merge: 9998285 d0c2815
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Mon Oct 17 11:47:02 2022 -0300
+
+    Merge pull request #6 from allanrodriguesmachado/login
+    
+    Merge pull request #5 from allanrodriguesmachado/main
+
+[33mcommit d0c28159eb57cb1cdd3e69e5724d2e4d8a036bb7[m[33m ([m[1;31morigin/login[m[33m)[m
+Merge: 728c967 9998285
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Mon Oct 17 11:46:27 2022 -0300
+
+    Merge pull request #5 from allanrodriguesmachado/main
+    
+    Login
+
+[33mcommit 9998285e55b131019dc5e244e9bf4e4999eeb590[m
+Merge: 58afe2b 728c967
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Mon Oct 17 11:45:32 2022 -0300
+
+    Merge pull request #4 from allanrodriguesmachado/login
+    
+    Validation Login UniPonto #3 - Message error
+
+[33mcommit 728c967d53feaa9009c4dbc11da65e76d94b0a87[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Mon Oct 17 11:44:42 2022 -0300
+
+    Validation Login UniPonto #3 - Message error
+
+[33mcommit 58afe2bf0212cec907b5e078d6bb29fbf706dc32[m
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Mon Oct 17 11:30:47 2022 -0300
+
+    Update README.md
+
+[33mcommit 2ecbfe0660ac9f20beef5bbb216cc77a117d0477[m
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Mon Oct 17 11:30:35 2022 -0300
+
+    Update README.md
+
+[33mcommit 4c193523e34ba79621ba65dfe0f3a6ff05130704[m
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Mon Oct 17 11:29:20 2022 -0300
+
+    Update README.md
+
+[33mcommit 6608d747e321d502ffc979b0b6bd6d5a08b6eb7c[m
+Merge: 820ac72 9fb40c3
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Mon Oct 17 11:28:49 2022 -0300
+
+    Merge branch 'login'
+
+[33mcommit 9fb40c3f5ac2baa3c758782b6740f48efa0aa197[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Mon Oct 17 11:28:25 2022 -0300
+
+    Update Files
+
+[33mcommit 820ac72466f673a70bfcd5d5a4137c7b1630c4b1[m
+Merge: f7f2055 a90b5f0
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Mon Oct 17 11:07:16 2022 -0300
+
+    Merge pull request #3 from allanrodriguesmachado/login
+    
+    Create Login #2
+
+[33mcommit a90b5f0881f17479893990bdc3cc11a2ad8bc48f[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Mon Oct 17 11:05:33 2022 -0300
+
+    Criando Login #2
+
+[33mcommit f7f2055c1885208d654b47ac0b65f498e594a531[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Mon Oct 17 10:51:43 2022 -0300
+
+    Atualizando
+
+[33mcommit b3d3dee0b7a88f16c48fbe484c0a3491124902bb[m[33m ([m[1;31morigin/main-login[m[33m)[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Mon Oct 17 10:46:37 2022 -0300
+
+    Vs
+
+[33mcommit eda61ed2adef0f090c409d0eddf2ec888ead2217[m
+Merge: 1e71cd6 237308d
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Mon Oct 17 10:40:44 2022 -0300
+
+    Merge pull request #1 from allanrodriguesmachado/main-login
+    
+    Atualizando
+
+[33mcommit 237308defcb1ff73543a260208dbc5c610f1d7fe[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Mon Oct 17 10:40:10 2022 -0300
+
+    Atualizando
+
+[33mcommit 1e71cd60ce31da643c169126e8681710e708c32b[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Mon Oct 17 10:34:35 2022 -0300
+
+    Version 1.0.0
+
+[33mcommit 89cc710c8f9292d56fcca176728e5e388ee1d715[m
+Merge: 82609e0 ed3c3bd
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Thu Oct 13 15:19:58 2022 -0300
+
+    Merge branch 'main' of https://github.com/allanrodriguesmachado/UniPonto
+
+[33mcommit 82609e0908dba1b651675e92d8198fc43f3312fe[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Thu Oct 13 15:19:42 2022 -0300
+
+    Atualizando
+
+[33mcommit ed3c3bdfda67d067154fb50337d8cfbbeaca17a5[m
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Thu Oct 13 14:34:01 2022 -0300
+
+    Update README.md
+
+[33mcommit 915a3e314df06f9c08db6a5c395ebcf624030749[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Thu Oct 13 14:33:01 2022 -0300
+
+    Login #02
+
+[33mcommit 9ddeb48846af86904ec487f64fcc7c4b4ca2f6fc[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Thu Oct 13 11:14:09 2022 -0300
+
+    Atualizando
+
+[33mcommit a5d4ff340523d7294042f26ad380462c44427999[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Fri Oct 7 09:08:11 2022 -0300
+
+    Atualizando
+
+[33mcommit 530ed90f60edb4463283c3888a22331db60d699a[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Thu Oct 6 17:09:09 2022 -0300
+
+    Login
+
+[33mcommit 11464433929e588f9f1dbb13e30ae984efcd5b83[m
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Thu Oct 6 17:04:00 2022 -0300
+
+    Update README.md
+
+[33mcommit 9088b1eb6f97c229e2a5833301312107f1b4f7e5[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Thu Oct 6 17:02:15 2022 -0300
+
+    Login
+
+[33mcommit 1eb8554cd8afdf7ccdfeed3a550627051398f5c4[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Sep 27 14:12:59 2022 -0300
+
+    Classe User #02  :bulb:
+
+[33mcommit 669ef9cf16e65e192dfac4c2cefaf4aaff68de7f[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Sep 27 13:27:56 2022 -0300
+
+    Classe User #01  :bulb:
+
+[33mcommit 5091da3d0b91b978518fa33c2eb9d173ea603799[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Sep 27 11:46:24 2022 -0300
+
+    Create Class Database  :bulb:
+
+[33mcommit 0777595e3ad6f81691efff0138944337e04f6305[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Sep 27 11:12:45 2022 -0300
+
+    Create Class Database  :bulb:
+
+[33mcommit a1de6425975e67cc23eed1251d37c137d22a69b0[m
+Author: 38672505883 <allan.shibata@gmail.com.br>
+Date:   Tue Sep 27 10:30:26 2022 -0300
+
+    Create Database :bulb:
+
+[33mcommit 03697a2d94a658abeadf9cec3281294947dcd759[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Wed May 25 22:52:28 2022 -0300
+
+    Authentication Screen
+
+[33mcommit f9d506c4608393b384991e4126cf6ca9b316098c[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Wed May 25 22:19:51 2022 -0300
+
+    Generating SQL command
+
+[33mcommit 57c4fa29fa41754eef22058cea7ce995451cf7ae[m
+Author: Allan Rodrigues Machado <allan.rodrigues14@hotmail.com>
+Date:   Tue May 3 12:39:57 2022 -0300
+
+    Creating the database
+
+[33mcommit 0989ba53cff46669fd2c986784a35cf03206c8e1[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Wed Mar 9 00:06:54 2022 -0300
+
+    Atualizando
+
+[33mcommit e582a63d2a9b3cb4edf55339a6b1d09c0344485b[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Sun Aug 8 17:13:19 2021 -0300
+
+    Login
+
+[33mcommit a1fd40d6667fe4606f3c7b6df1960dae467624df[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Sun Aug 8 16:59:54 2021 -0300
+
+    Login
+
+[33mcommit 002a8fd19eac09c8c48e479ca68f303a7288de59[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Sun Aug 8 14:25:40 2021 -0300
+
+    Gerando Comando Select
+
+[33mcommit a9cc67d956869424cf01e0399c1a1114c5987f35[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Sun Aug 8 13:53:43 2021 -0300
+
+    Classe User 2
+
+[33mcommit fd23c40ba6eccba22a628bca95dadb4b948bb1e2[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Sun Aug 8 02:00:07 2021 -0300
+
+    Class User 1
+
+[33mcommit 4f87f9b318399e504801efb256fe930d9dabdcd9[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Sun Aug 8 01:26:54 2021 -0300
+
+    Classe Database #02
+
+[33mcommit 70be9fcd7bc2c57483a49f917a24cecee1c7bf7e[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Thu Aug 5 21:59:20 2021 -0300
+
+    Classe Database #02
+
+[33mcommit 2a78604c065b2e80b70cb85937b5dedffd29fb57[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Thu Aug 5 21:52:25 2021 -0300
+
+    Estrutura Inicial / Database 1
+
+[33mcommit 3a9298997fafa99705cab3eec28a47c8bbc3328d[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Tue Jul 27 19:09:40 2021 -0300
+
+    Classe Database #01
+
+[33mcommit d56be0bea6e521cfdacec93d10aed4650fad395d[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Mon Jul 26 23:42:44 2021 -0300
+
+    Atualização
+
+[33mcommit 9c5783712ee4d4da645e6f4ee596a7e8df435783[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Mon Jul 26 23:42:11 2021 -0300
+
+    Atualização
+
+[33mcommit 6b8df2f5bdd9babac095f5c44bfac1833ca52a1c[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Mon Jul 26 23:42:07 2021 -0300
+
+    Atualização
+
+[33mcommit 7380daa1e00493daa314b24d10c9d8f49f464c5e[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Mon Jul 26 23:26:55 2021 -0300
+
+    Atualização
+
+[33mcommit 7fad3c1b2a0094ad6f5daae36a615ce2fcb4a93e[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Mon Jul 26 23:26:33 2021 -0300
+
+    Atualização
+
+[33mcommit 213f644a7f90bdb26eeab839426fceac99bd2f17[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Sun Jun 6 17:51:52 2021 -0300
+
+    Login#1
+
+[33mcommit 8af22be9e11cbe943bf1751505344d9d46333143[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Sun Jun 6 17:29:49 2021 -0300
+
+    Tela de autenticação - LOGIN
+
+[33mcommit 6b64f4e4208adc7c747367a16cb8bd9f8d49e3ed[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Sun Jun 6 16:58:26 2021 -0300
+
+    Usuário do banco
+
+[33mcommit 9de9d456f91c90e6851a971936b407c141acbddc[m
+Author: allanrodriguesmachado <allan.rodrigues14@hotmail.com>
+Date:   Sun Jun 6 16:20:42 2021 -0300
+
+    Gerando Comando Select
+
+[33mcommit 4a336ba62d9f1de70d01690d7df69cbe1a7d7229[m
+Author: allanrodrigues <allan.rodrigues14@hotmail.com>
+Date:   Fri May 7 23:04:42 2021 -0300
+
+    DB
+
+[33mcommit 8a70342623b6d46dd215de0e31821d4f9082b55a[m
+Author: allanrodrigues <allan.rodrigues14@hotmail.com>
+Date:   Fri May 7 22:35:56 2021 -0300
+
+    Parte 1
+
+[33mcommit 333c89890332c355f287faf34f177cec5c4e2926[m
+Author: allanrodrigues <allan.rodrigues14@hotmail.com>
+Date:   Fri May 7 21:23:53 2021 -0300
+
+    AT
+
+[33mcommit 95ce6a2f4df9b0712897aab6de31a0da5c0f3554[m
+Author: Allan Rodrigues Machado <54523516+allanrodriguesmachado@users.noreply.github.com>
+Date:   Mon Mar 29 22:57:09 2021 -0300
+
+    Initial commit
