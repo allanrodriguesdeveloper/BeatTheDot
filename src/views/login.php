@@ -22,9 +22,10 @@
         </div>
 
         <div class="card-body">
+            <?php include(TEMPLATE_PATH . '/messages.php');?>
             <div class="form-group">
                 <label for="email">Matricula</label>
-                <input type="email" name="email" id="email" class="form-control border-0" placeholder="Digite sua Matricula" autofocus>
+                <input value="<?= $email ?>" type="email" name="email" id="email" class="form-control border-0" placeholder="Digite sua Matricula" autofocus>
             </div>
 
             <div class="form-group">
