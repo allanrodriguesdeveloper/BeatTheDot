@@ -2,8 +2,10 @@
 
 require_once(dirname(__FILE__, 2) . '/src/config/Database.php');
 
-$user = Database::getConnection();
+$result = Database::getResultFromQuery('SELECT * FROM users');
 
-echo "<pre>";
-print_r($user);
-echo "<pre>";
+//while ($row = $result->fetch_assoc()) {
+//    echo "<pre>";
+//    print_r($row);
+//    echo "</pre>";
+//}
