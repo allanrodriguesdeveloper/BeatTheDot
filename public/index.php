@@ -3,7 +3,6 @@
 require_once(dirname(__FILE__, 2) . '/src/config/config.php');
 require_once(dirname(__FILE__, 2) . '/src/models/User.php');
 
-$user = new User(['name' => 'Allan', 'email' => 'dev@php.com.br']);
+$user = new User(['name' => 'admin', 'email' => 'admin@uniponto.com.br']);
 
-echo User::getSelect(['name' => 1], 'name, email');
-echo User::getSelect(['name' => 'Chave', 'email' => 'chave@php.com.br'], 'name, email');
+print_r(User::get(['id' => '1'], 'name, email'));
