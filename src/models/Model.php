@@ -20,17 +20,17 @@ class Model
         }
     }
 
-    public function __get($key)
+    public function __get(string $key)
     {
         return $this->values[$key];
     }
 
-    public function __set($key, $value)
+    public function __set(string $key, string $value)
     {
         $this->values[$key] = $value;
     }
 
-    public static function get($filters = [], $columns = '*'): array
+    public static function get(array $filters = [], string $columns = '*'): array
     {
         $objects = [];
 
@@ -45,7 +45,7 @@ class Model
         return $objects;
     }
 
-    public static function getResultSetFromSelect($filters = [], $columns = '*')
+    public static function getResultSetFromSelect(array $filters = [], string $columns = '*')
     {
         $sql = "SELECT ${columns} FROM "
             . static::$tableName
@@ -77,7 +77,7 @@ class Model
     private static function getFormattedValue($value)
     {
         if (is_null($value)) {
-            return "null";
+            return null;
         }
 
         if (gettype($value) === 'string') {
