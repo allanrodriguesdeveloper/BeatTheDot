@@ -1,11 +1,10 @@
 <?php
 
-require_once(dirname(__FILE__, 2) . '/src/config/Database.php');
+require_once(dirname(__FILE__, 2) . '/src/config/config.php');
+require_once(dirname(__FILE__, 2) . '/src/models/User.php');
 
-$result = Database::getResultFromQuery('SELECT * FROM users');
+$user = new User(['name' => 'Allan', 'email' => 'dev@php.com.br']);
 
-//while ($row = $result->fetch_assoc()) {
-//    echo "<pre>";
-//    print_r($row);
-//    echo "</pre>";
-//}
+echo "<pre>";
+print_r($user);
+echo "</pre>";
