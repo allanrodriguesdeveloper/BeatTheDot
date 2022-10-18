@@ -1,10 +1,13 @@
 <?php
 
+<<<<<<< HEAD
+=======
 namespace Src\models;
 
 use Exception;
 use Src\exceptions\AppException;
 
+>>>>>>> a3c04c2551286ad1388caca5dbdfe97eb59dbb5c
 class Login extends Model
 {
     public function checkLogin()

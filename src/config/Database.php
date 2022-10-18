@@ -1,9 +1,5 @@
 <?php
 
-//namespace Src\config;
-
-//use mysqli;
-
 class Database
 {
     /**
