@@ -23,5 +23,16 @@ class Database
 
         return $conn;
     }
-}
 
+    /**
+     * Retrieve the result from the database
+     * Recupera o resultado do banco de dados
+     */
+    public static function getResultFromQuery($sql)
+    {
+        $conn = self::getConnection();
+        $result = $conn->query($sql);
+        $conn->close();
+        return $result;
+    }
+}
