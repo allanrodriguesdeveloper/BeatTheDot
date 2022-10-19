@@ -14,7 +14,7 @@
     <title>UniPonto</title>
 </head>
 <body>
-<form class="form-login" action="#" method="post">
+<form  class="form-login" action="#" method="post">
     <div class="login-card card border-0">
         <div class="card-header text-light bg-dark-login">
             <i class="icofont-travelling"></i>
@@ -25,7 +25,7 @@
         <div class="card-body text-light bg-dark-login">
             <div class="form-group">
                 <label for="email">Matricula</label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="informe a sua matricula" autofocus>
+                <input value="<?= $email; ?>" type="email" id="email" name="email" class="form-control" placeholder="informe a sua matricula" autofocus>
             </div>
             <div class="form-group">
                 <label for="password">Senha</label>
@@ -34,7 +34,7 @@
         </div>
 
         <div class="card-footer bg-dark-login">
-            <button type="button" class="btn btn-success btn-lg btn-block"><i class="icofont-login mx-2"></i>Entrar</button>
+            <button class="btn btn-success btn-lg btn-block"><i class="icofont-login mx-2"></i>Entrar</button>
         </div>
     </div>
 </form>

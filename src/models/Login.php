@@ -1,19 +1,20 @@
 <?php
 
-require_once(realpath(MODEL_PATH . '/User.php'));
+loadModel('User');
 
 class Login extends Model
 {
-    public function checkLogin()
-    {
+    public function checkLogin() {
         $user = User::getOne(['email' => $this->email]);
-
-        if ($user) {
-            if (password_verify($this->password, $user->password)) {
-                return $user;
+        if($user) {
+            if($user->end_date) {
+                throw new Exception('Usuário está desligado da empresa.');
             }
 
-            throw new Exception("Error");
+            if(password_verify($this->password, $user->password)) {
+                return $user;
+            }
         }
+        throw new Exception('Usuário e Senha inválidos.');
     }
 }
