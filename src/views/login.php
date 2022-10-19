@@ -23,6 +23,7 @@
         </div>
 
         <div class="card-body text-light bg-dark-login">
+            <?php include(TEMPLATE_PATH . '/messages.php')?>
             <div class="form-group">
                 <label for="email">Matricula</label>
                 <input value="<?= $email; ?>" type="email" id="email" name="email" class="form-control" placeholder="informe a sua matricula" autofocus>
