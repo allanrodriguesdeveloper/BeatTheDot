@@ -14,3 +14,17 @@
     <title>UniPonto</title>
 </head>
 <body>
+
+<header class="header bg-dark-login text-light">
+    <div class="logo">
+        <i class="icofont-travelling"></i>
+        <span class="font-weight-bold mx-2 ">UniPonto</span>
+        <i class="icofont-runner-alt-1"></i>
+    </div>
+
+    <div class="menu-toggle mx-3">
+        <i class="icofont-navigation-menu"></i>
+    </div>
+
+    <div class="spacer"></div>
+</header>
