@@ -25,16 +25,24 @@ class Model
         return $this->values[$key];
     }
 
-    public function __set($key,  $value)
+    public function __set($key, $value)
     {
         $this->values[$key] = $value;
     }
 
-    public static function get(array $filters = [], string $columns = '*'): array
+    public static function getOne($filters = [], $columns = '*')
+    {
+        $class = get_called_class();
+        $result = static::getResultSetFromSelect($filters, $columns);
+
+        return $result ? new $class($result->fetch_assoc()) : null;
+    }
+
+    public static function get(array $filters = [], string $columns = '*')
     {
         $objects = [];
-
         $result = static::getResultSetFromSelect($filters, $columns);
+
         if ($result) {
             $class = get_called_class();
             while ($row = $result->fetch_assoc()) {
@@ -45,19 +53,9 @@ class Model
         return $objects;
     }
 
-    public static function getOne(array $filters = [], string $columns = '*')
-    {
-        $class = get_called_class();
-        $result = static::getResultSetFromSelect($filters, $columns);
-        return $result ? new $class($result->fetch_assoc()) : null;
-    }
-
     public static function getResultSetFromSelect(array $filters = [], string $columns = '*')
     {
-        $sql = "SELECT ${columns} FROM "
-            . static::$tableName
-            . static::getFilters($filters);
-
+        $sql = "SELECT ${columns} FROM " . static::$tableName . static::getFilters($filters);
         $result = Database::getResultFromQuery($sql);
 
         if ($result->num_rows === 0) {
@@ -70,11 +68,10 @@ class Model
     private static function getFilters($filters): string
     {
         $sql = '';
-
         if (count($filters) > 0) {
             $sql .= " WHERE 1 = 1";
-            foreach ($filters as $columns => $value) {
-                $sql .= " AND ${columns} = " . static::getFormattedValue($value);
+            foreach ($filters as $column => $value) {
+                $sql .= " AND ${column} = " . static::getFormattedValue($value);
             }
         }
 
@@ -84,13 +81,11 @@ class Model
     private static function getFormattedValue($value)
     {
         if (is_null($value)) {
-            return null;
-        }
-
-        if (gettype($value) === 'string') {
+            return "null";
+        } else if (gettype($value) === 'string') {
             return "'${value}'";
+        } else {
+            return $value;
         }
-
-        return $value;
     }
 }
