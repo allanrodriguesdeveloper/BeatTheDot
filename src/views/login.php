@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="assets/css/icofont.min.css">
     <link rel="stylesheet" href="assets/css/login.css">
 
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
     <title>UniPonto</title>
 </head>
 <body>
-<form  class="form-login" action="#" method="post">
+<form class="form-login"  method="post">
     <div class="login-card card border-0">
         <div class="card-header text-light bg-dark-login">
             <i class="icofont-travelling"></i>
@@ -23,14 +23,25 @@
         </div>
 
         <div class="card-body text-light bg-dark-login">
-            <?php include(TEMPLATE_PATH . '/messages.php')?>
+            <?php include(TEMPLATE_PATH . '/messages.php') ?>
             <div class="form-group">
                 <label for="email">Matricula</label>
-                <input value="<?= $email; ?>" type="email" id="email" name="email" class="form-control" placeholder="informe a sua matricula" autofocus>
+                <input value="<?= $email;
+                $email; ?>" type="email" id="email" name="email"
+                       class="form-control <?= $errors['email'] ? 'is-invalid' : '' ?>"
+                       placeholder="informe a sua matricula" autofocus>
+                <div class="invalid-feedback">
+                    <?= $errors['email']; ?>
+                </div>
             </div>
             <div class="form-group">
                 <label for="password">Senha</label>
-                <input type="password" id="password" name="password" class="form-control" placeholder="*********" autofocus>
+                <input type="password" id="password" name="password"
+                       class="form-control <?= $errors['password'] ? 'is-invalid' : '' ?>" placeholder="*********"
+                       autofocus>
+                <div class="invalid-feedback">
+                    <?= $errors['password']; ?>
+                </div>
             </div>
         </div>
 

@@ -2,37 +2,24 @@
 
 class Database
 {
-    /**
-     * Database connection - data coming from env.ini
-     * Conexão com o banco de dados - dados vindo do env.ini
-     */
-    private static function getConnection(): mysqli
+    public static function getConnection()
     {
         $envPath = realpath(dirname(__FILE__) . '/../env.ini');
         $env = parse_ini_file($envPath);
-        $connection = new mysqli(
-            $env['host'],
-            $env['username'],
-            $env['password'],
-            $env['database']
-        );
+        $conn = new mysqli($env['host'], $env['username'], $env['password'], $env['database']);
 
-        if ($connection->connect_error) {
-            return $connection->connect_error;
+        if ($conn->connect_error) {
+            die("Erro " . $conn->connect_error);
         }
 
-        return $connection;
+        return $conn;
     }
 
-    /**
-     * Retrieve the result from the database
-     * Recupera o resultado do banco de dados
-     */
-    public static function getResultFromQuery(string $querySql)
+    public static function getResultFromQuery($sql)
     {
-        $connection = self::getConnection();
-        $result = $connection->query($querySql);
-        $connection->close();
+        $conn = self::getConnection();
+        $result = $conn->query($sql);
+        $conn->close();
         return $result;
     }
 }
