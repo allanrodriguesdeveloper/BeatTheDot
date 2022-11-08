@@ -3,5 +3,6 @@
 </h1>
 
 
+[![asciicast](https://github.com/allanrodriguesmachado/UniPonto/blob/main/.github/screen-recording.mp4)](https://asciinema.org/a/113463)
 
 
