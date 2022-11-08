@@ -172,9 +172,37 @@ aside.sidebar .sidebar-widget .info {
     flex: 1;
 }
 
-
 main.content {
+    background-color: #FFF;
     grid-area: content;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+}
+
+main.content .content-title {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 5px;
+}
+
+main.content .content-title .icon {
+    font-size: 2.3rem;
+}
+
+main.content .content-title h1 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+main.content .content-title h2 {
+    font-size: 1.1rem;
+    color: #646464;
+    font-weight: 300;
+    margin: 0;
 }
 
 footer.footer {
@@ -186,4 +214,8 @@ footer.footer {
     grid-area: footer;
     background-color: rgb(35, 35, 35);
     color: #FFF;
+}
+
+.record {
+    font-size: 2rem;
 }

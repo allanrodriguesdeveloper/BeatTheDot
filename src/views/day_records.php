@@ -2,24 +2,24 @@
     <div class="content-title mb-4">
         <div class="icon icofont-check-alt mr-2"></div>
         <div>
-            <h>Registrar Ponto</h>
+            <h1>Registrar Ponto</h1>
             <h2>Mantenha seu ponto atualizado</h2>
         </div>
     </div>
 
     <div class="card">
         <div class="card-header">
-            <h3>10 de Janeiro de 2025</h3>
+            <h3>08 de Novembro de 2022</h3>
             <p class="mb-0">Os Batimento efetuados Hoje</p>
         </div>
         <div class="card-body">
             <div class="m-5 d-flex justify-content-around">
-                <span>Entrada 1: ----</span>
-                <span>Saída 1: ----</span>
+                <span class="record">Entrada 1: ----</span>
+                <span class="record">Saída 1: ----</span>
             </div>
             <div class="m-5 d-flex justify-content-around">
-                <span>Entrada 2: ----</span>
-                <span>Saída 2: ----</span>
+                <span class="record">Entrada 2: ----</span>
+                <span class="record">Saída 2: ----</span>
             </div>
         </div>
 
