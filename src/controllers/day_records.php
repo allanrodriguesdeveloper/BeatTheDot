@@ -1,4 +1,4 @@
 <?php
 
 
-loadTemplateView('day_records', []);
+loadTemplateView('day_records');
