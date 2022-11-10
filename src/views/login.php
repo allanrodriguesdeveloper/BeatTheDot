@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/icofont.min.css">
     <link rel="stylesheet" href="assets/css/login.css">
 
-    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <title>UniPonto</title>
 </head>
 <body>
