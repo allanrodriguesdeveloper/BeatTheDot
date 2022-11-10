@@ -1,15 +1,15 @@
 <main class="content">
-    <div class="content-title mb-4">
-        <div class="icon icofont-check-alt mr-2"></div>
-        <div>
-            <h1>Registrar Ponto</h1>
-            <h2>Mantenha seu ponto atualizado</h2>
-        </div>
-    </div>
-
+    <?php
+    renderTitle(
+        'Registrar Ponto',
+        'Mantenha seu ponto atualizado',
+        'icofont-check-alt'
+    );
+    include(TEMPLATE_PATH . "/messages.php");
+    ?>
     <div class="card">
         <div class="card-header">
-            <h3>08 de Novembro de 2022</h3>
+            <h3><?= $today ?></h3>
             <p class="mb-0">Os Batimento efetuados Hoje</p>
         </div>
         <div class="card-body">

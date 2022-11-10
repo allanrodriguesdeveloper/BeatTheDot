@@ -76,7 +76,6 @@ header.header .dropdown-content {
     padding: 15px 0;
     z-index: 100;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
-    margin-top: 13px
 }
 
 header.header .dropdown-content ul {
