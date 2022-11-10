@@ -65,20 +65,41 @@ class Model
         return $result;
     }
 
+    public function insert() {
+        $sql = "INSERT INTO " . static::$tableName . " ("
+            . implode(",", static::$columns) . ") VALUES (";
+        foreach(static::$columns as $col) {
+            $sql .= static::getFormatedValue($this->$col) . ",";
+        }
+        $sql[strlen($sql) - 1] = ')';
+        $id = Database::executeSQL($sql);
+        $this->id = $id;
+    }
+
+    public function update() {
+        $sql = "UPDATE " . static::$tableName . " SET ";
+        foreach(static::$columns as $col) {
+            $sql .= " ${col} = " . static::getFormatedValue($this->$col) . ",";
+        }
+        $sql[strlen($sql) - 1] = ' ';
+        $sql .= "WHERE id = {$this->id}";
+        Database::executeSQL($sql);
+    }
+
     private static function getFilters($filters): string
     {
         $sql = '';
         if (count($filters) > 0) {
             $sql .= " WHERE 1 = 1";
             foreach ($filters as $column => $value) {
-                $sql .= " AND ${column} = " . static::getFormattedValue($value);
+                $sql .= " AND ${column} = " . static::getFormatedValue($value);
             }
         }
 
         return $sql;
     }
 
-    private static function getFormattedValue($value)
+    private static function getFormatedValue($value)
     {
         if (is_null($value)) {
             return "null";

@@ -28,7 +28,7 @@ function isBefore($date1, $date2) {
 /**
  * @throws Exception
  */
-function getNexDay($date) {
+function getNextDay($date) {
     $inputDate = getDateAsDateTime($date);
     $inputDate->modify('+1 day');
     return $inputDate;
