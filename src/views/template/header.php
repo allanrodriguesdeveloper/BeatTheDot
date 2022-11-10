@@ -31,7 +31,7 @@
                  src="<?= "http://www.gravatar.com/avatar.php?gravatar_id=" .
                  md5(mb_strtolower(trim($_SESSION['user']->email))) ?>"
                  alt="user">
-            <span class="ml-3">
+            <span class="ml-3 font-weight-light">
                 <?= $_SESSION['user']->name; ?>
             </span>
             <i class="icofont-simple-down mx-2"></i>
