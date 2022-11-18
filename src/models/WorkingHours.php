@@ -38,6 +38,19 @@ class WorkingHours extends Model
         return null;
     }
 
+    public function getActiveClock()
+    {
+        $nextTime = $this->getNextTime();
+
+        if ($nextTime === 'time1' || $nextTime === 'time3' ) {
+            return 'exitTime';
+        } elseif ($nextTime === 'time2' || $nextTime === 'time4' ) {
+            return 'workedInterval';
+        } else {
+            return null;
+        }
+    }
+
     public function innout($time)
     {
         $timeColumn = $this->getNextTime();
@@ -54,7 +67,8 @@ class WorkingHours extends Model
         }
     }
 
-    public function getWorkedInterval() {
+    public function getWorkedInterval()
+    {
         [$t1, $t2, $t3, $t4] = $this->getTimes();
 
         $part1 = new DateInterval('PT0S');
@@ -65,19 +79,34 @@ class WorkingHours extends Model
         if ($t3) $part2 = $t3->diff(new DateTime());
         if ($t4) $part2 = $t3->diff($t4);
 
-
         return sumIntervals($part1, $part2);
     }
 
-    function getLunchInterval() {
+    function getLunchInterval()
+    {
         [, $t2, $t3,] = $this->getTimes();
 
-        $breakInterval = new DateInterval('PT0S');
+        $lunchInterval = new DateInterval('PT0S');
 
-        if ($t2) $breakInterval = $t2->diff(new DateTime());
-        if ($t3) $breakInterval = $t3->diff($t2);
+        if ($t2) $lunchInterval = $t2->diff(new DateTime());
+        if ($t3) $lunchInterval = $t2->diff($t3);
 
-        return $breakInterval;
+        return $lunchInterval;
+    }
+
+    function getExitTime()
+    {
+        [$t1, , , $t4] = $this->getTimes();
+        $workDay =  DateInterval::createFromDateString('8 hours');
+
+        if (!$t1) {
+            return (new DateTimeImmutable())->add($workDay);
+        } elseif ($t4) {
+            return $t4;
+        } else {
+            $total = sumIntervals($workDay, $this->getLunchInterval());
+            return $t1->add($total);
+        }
     }
 
     private function getTimes(): array

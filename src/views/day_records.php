@@ -14,19 +14,19 @@
         </div>
         <div class="card-body">
             <div class="m-5 d-flex justify-content-around text-center">
-                <span class="record"><?= $records->time1 ?? '----' ?>
+                <span class="record"><?= $workingHours->time1 ?? '----' ?>
                     <h6 class="text-secondary font-weight-light text-uppercase">
                         <i class="text-secondary icofont-clock-time m-1"></i>
                         Inicio do expediente</h6></span>
-                <span class="record"><?= $records->time2 ?? '----' ?>
+                <span class="record"><?= $workingHours->time2 ?? '----' ?>
                     <h6 class="text-secondary font-weight-light text-uppercase"><i
                                 class="text-secondary icofont-clock-time m-1"></i>Saída para refeição</h6></span>
             </div>
             <div class="m-5 d-flex justify-content-around text-center">
-                <span class="record"><?= $records->time3 ?? '----' ?>
+                <span class="record"><?= $workingHours->time3 ?? '----' ?>
                     <h6 class="text-secondary font-weight-light text-uppercase"><i
                                 class="text-secondary icofont-clock-time m-1"></i>Entrada para refeição</h6></span>
-                <span class="record"><?= $records->time4 ?? '----' ?><h6
+                <span class="record"><?= $workingHours->time4 ?? '----' ?><h6
                             class="text-secondary font-weight-light text-uppercase"><i
                                 class="text-secondary icofont-clock-time m-1"></i>Fim do expediente</h6></span>
             </div>
