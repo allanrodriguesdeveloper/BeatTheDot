@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -12,12 +12,11 @@
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <title>UniPonto</title>
 </head>
-<body class="">
+<body>
 <header class="header bg-dark-login text-light">
-    <div class="logo ">
-        <i class="icofont-travelling"></i>
+    <div class="logo">
+        <img src="../../../assets/favicon.png" style="width: 30px;" alt="">
         <span class="font-weight-bold mx-2 ">UniPonto</span>
-        <i class="icofont-runner-alt-1"></i>
     </div>
 
     <div class="menu-toggle mx-3">

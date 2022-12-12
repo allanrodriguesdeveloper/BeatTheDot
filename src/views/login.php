@@ -17,9 +17,8 @@
 <form class="form-login"  method="post">
     <div class="login-card card border-0">
         <div class="card-header text-light bg-dark-login">
-            <i class="icofont-travelling"></i>
+            <img src="../../../assets/favicon.png" style="width: 40px;" alt="">
             <span class="font-weight-bold mx-2 ">UniPonto</span>
-            <i class="icofont-runner-alt-1"></i>
         </div>
 
         <div class="card-body text-light bg-dark-login">

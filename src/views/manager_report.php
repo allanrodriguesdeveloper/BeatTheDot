@@ -1,10 +1,10 @@
 <main class="content">
     <?php
-    renderTitle(
-        'Relatório Gerencial',
-        'Resumo das horas trabalhadas dos funcionários',
-        'icofont-chart-histogram'
-    );
+        renderTitle(
+            'Relatório Gerencial',
+            'Resumo das horas trabalhadas dos funcionários',
+            'icofont-chart-histogram'
+        );
     ?>
 
     <div class="summary-boxes">
@@ -34,14 +34,14 @@
             <div class="card-body">
                 <table class="table table-bordered table-striped table-hover">
                     <thead>
-                    <th>Nome</th>
+                        <th>Nome</th>
                     </thead>
                     <tbody>
-                    <?php foreach($absentUsers as $name): ?>
-                        <tr>
-                            <td><?= $name ?></td>
-                        </tr>
-                    <?php endforeach ?>
+                        <?php foreach($absentUsers as $name): ?>
+                            <tr>
+                                <td><?= $name ?></td>
+                            </tr>
+                        <?php endforeach ?>
                     </tbody>
                 </table>
             </div>

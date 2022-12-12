@@ -2,7 +2,7 @@
 
 error_reporting(0);
 
-require_once(dirname(__FILE__, 2) . '/src/config/config.php');
+require_once "src/config/config.php";
 
 $uri = urldecode(
     parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)

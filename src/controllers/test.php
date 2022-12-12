@@ -1,4 +1,2 @@
 <?php
-
-echo User::getCount(['id' => 1]);
-
+// Controller temporário!!!

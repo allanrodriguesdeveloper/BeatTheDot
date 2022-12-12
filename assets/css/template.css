@@ -2,43 +2,43 @@ body {
     display: grid;
     grid-template-columns: 250px 1fr;
     grid-template-rows: 64px 1fr 64px;
-    grid-template-areas:
-            "header header"
-            "sidebar content"
-            "sidebar footer";
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
     height: 100vh;
     margin: 0;
-    background: #DDD;
+    background-color: #DDD;
 }
 
 body.hide-sidebar {
-    grid-template-columns:  1fr;
-    grid-template-areas:
-            "header"
-            "content"
-            "footer";
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "content"
+        "footer";
 }
 
 header.header {
     grid-area: header;
     display: flex;
-    background-color: rgb(35, 35, 35);
-
+    background-color: #000000;
     align-items: center;
     z-index: 10;
-    -webkit-box-shadow: 2px 3px 14px 2px #000000;
-    box-shadow: 2px 3px 14px 2px #000000;
+    box-shadow: 
+        0 2px 4px -1px rgba(0, 0, 0, .2),
+        0 4px 4px 0px rgba(0, 0, 0, .14),
+        0 1px 10px 0px rgba(0, 0, 0, .12);
 }
 
 header.header .logo {
     display: flex;
-    color: white;
-    font-size: 1.5rem;
-    flex-basis: 200px;
-    /*height: 64px;*/
-    height: 100%;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    flex-basis: 250px;
+    height: 100%;
 }
 
 header.header .menu-toggle {
@@ -52,6 +52,7 @@ header.header .spacer {
 
 header.header .dropdown {
     position: relative;
+    height: 100%;
 }
 
 header.header .dropdown-button {
@@ -64,18 +65,18 @@ header.header .dropdown-button {
     cursor: pointer;
 }
 
-header.header .dropdown:hover .dropdown-content {
-    display: block;
-}
-
 header.header .dropdown-content {
     display: none;
     position: absolute;
     min-width: 100%;
     background-color: #f9f9f9;
-    padding: 15px 0;
+    padding: 15px 0px;
     z-index: 100;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);
+}
+
+header.header .dropdown:hover .dropdown-content {
+    display: block;
 }
 
 header.header .dropdown-content ul {
@@ -86,36 +87,34 @@ header.header .dropdown-content ul {
 
 header.header .dropdown-content a {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 7px;
-    font-size: 1.1rem;
     text-decoration: none;
     color: #222;
+    padding: 7px;
+    font-size: 1.1rem;
 }
 
 header.header .dropdown-content a:hover {
     background-color: rgba(0, 0, 0, .05);
 }
 
-header.header .content a:hover {
+header.header .dropdown:hover {
     background-color: rgba(0, 0, 0, .1);
 }
 
 header.header .avatar {
-    height: 40px;
-    width: 40px;
+    height: 75%;
     border-radius: 50%;
-    margin-left:  10px;
+    margin-left: 10px;
 }
 
 aside.sidebar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: -5px 0 25px 1px rgba(0, 0, 0, 0.4);
-    background-color: #FFF;
     grid-area: sidebar;
+    box-shadow: -5px 0px 25px 1px rgba(0, 0, 0, 0.4);
+    background-color: #FFF;
 }
 
 aside.sidebar .menu {
@@ -131,12 +130,13 @@ aside.sidebar .menu ul.nav-list {
 
 aside.sidebar .menu li.nav-item {
     margin: 0;
-    padding: 10px 0 10px 25px;
+    padding: 10px 10px 10px 25px;
 }
 
 aside.sidebar .menu li.nav-item:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
+
 
 aside.sidebar .menu li.nav-item a {
     font-size: 1.2rem;
@@ -148,28 +148,19 @@ body.hide-sidebar aside.sidebar {
     display: none;
 }
 
-aside.sidebar .sidebar-widget{
+aside.sidebar .sidebar-widgets {
+    position: sticky;
+    bottom: 20px;
+}
+
+aside.sidebar .sidebar-widget {
     display: flex;
     align-items: center;
 }
 
-aside.sidebar .sidebar-widgets{
-    position: sticky;
-    bottom: 10px;
-}
-
-aside.sidebar .icon {
-    font-size: 2.5rem;
-    margin: 2px 10px 2px 0;
-}
-
-aside.sidebar .info .main {
-    font-size: 1.5rem;
-}
-
-.division {
-    width: 100%;
-    border: solid 1px #929191;
+aside.sidebar .sidebar-widget .icon {
+    font-size: 3.5rem;
+    margin: 2px 10px 2px 0px;
 }
 
 aside.sidebar .sidebar-widget .info {
@@ -179,35 +170,45 @@ aside.sidebar .sidebar-widget .info {
     flex: 1;
 }
 
+.division {
+    widows: 80%;
+    border: solid 1px #EEE;
+}
+
+aside.sidebar .info .main {
+    font-size: 2rem;
+}
+
 main.content {
     background-color: #FFF;
     grid-area: content;
     margin: 20px;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
 }
 
 main.content .content-title {
     display: flex;
     align-items: center;
+    padding-bottom: 15px;
     border-bottom: 1px solid #CCC;
-    padding-bottom: 5px;
 }
 
 main.content .content-title .icon {
-    font-size: 2.3rem;
+    font-size: 3rem;
 }
 
 main.content .content-title h1 {
-    font-size: 1.5rem;
+    color: #444;
+    font-size: 1.8rem;
     font-weight: 300;
     margin: 0;
 }
 
 main.content .content-title h2 {
-    font-size: 1.1rem;
-    color: #646464;
+    color: #888;
+    font-size: 1.2rem;
     font-weight: 300;
     margin: 0;
 }
@@ -216,15 +217,15 @@ footer.footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 20px;
+    padding-right: 20px;
     font-size: 1.2rem;
     grid-area: footer;
-    background-color: rgb(35, 35, 35);
+    background-color: #222;
     color: #FFF;
 }
 
 .record {
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .summary-boxes {

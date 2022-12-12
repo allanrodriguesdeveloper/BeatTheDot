@@ -1,9 +1,7 @@
 <?php
-
-class User extends Model
-{
-    protected static string $tableName = 'users';
-    protected static array $columns = [
+class User extends Model {
+    protected static $tableName = 'users';
+    protected static $columns = [
         'id',
         'name',
         'password',
@@ -21,7 +19,6 @@ class User extends Model
         $this->validate();
         $this->is_admin = $this->is_admin ? 1 : 0;
         if(!$this->end_date) $this->end_date = null;
-        $this->password = password_hash($this->password, PASSWORD_DEFAULT);
         return parent::insert();
     }
 
@@ -64,7 +61,7 @@ class User extends Model
             $errors['confirm_password'] = 'Confirmação de Senha é um campo abrigatório.';
         }
 
-        if($this->password && $this->confirm_password
+        if($this->password && $this->confirm_password 
             && $this->password !== $this->confirm_password) {
             $errors['password'] = 'As senhas não são iguais.';
             $errors['confirm_password'] = 'As senhas não são iguais.';
