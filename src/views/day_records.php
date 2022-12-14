@@ -13,16 +13,25 @@
             <p class="mb-0">Os batimentos efetuados hoje</p>
         </div>
         <div class="card-body">
-            <div class="d-flex m-5 justify-content-around">
-                <span class="record">Entrada 1: <?= $workingHours->time1 ?? '---' ?></span>
-                <span class="record">Saída 1: <?= $workingHours->time2 ?? '---' ?></span>
+            <div class="m-5 d-flex justify-content-around text-center">
+                <span class="record"><?= $workingHours->time1 ?? '----' ?>
+                    <h6 class="text-secondary font-weight-light text-uppercase">
+                        <i class="text-secondary icofont-clock-time m-1"></i>
+                        Inicio do expediente</h6></span>
+                <span class="record"><?= $workingHours->time2 ?? '----' ?>
+                    <h6 class="text-secondary font-weight-light text-uppercase"><i
+                                class="text-secondary icofont-clock-time m-1"></i>Saída para refeição</h6></span>
             </div>
-            <div class="d-flex m-5 justify-content-around">
-                <span class="record">Entrada 2: <?= $workingHours->time3 ?? '---' ?></span>
-                <span class="record">Saída 2: <?= $workingHours->time4 ?? '---' ?></span>
+            <div class="m-5 d-flex justify-content-around text-center">
+                <span class="record"><?= $workingHours->time3 ?? '----' ?>
+                    <h6 class="text-secondary font-weight-light text-uppercase"><i
+                                class="text-secondary icofont-clock-time m-1"></i>Retorno da refeição</h6></span>
+                <span class="record"><?= $workingHours->time4 ?? '----' ?><h6
+                            class="text-secondary font-weight-light text-uppercase"><i
+                                class="text-secondary icofont-clock-time m-1"></i>Fim do expediente</h6></span>
             </div>
         </div>
-        <div class="card-footer d-flex justify-content-center">
+        <div class="card-footer d-flex justify-content-end">
             <a href="innout.php" class="btn btn-success btn-lg">
                 <i class="icofont-check mr-1"></i>
                 Bater o Ponto
