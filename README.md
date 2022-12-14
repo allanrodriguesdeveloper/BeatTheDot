@@ -2,12 +2,6 @@
   <img alt="UniPonto" title="UniPonto" src="https://github.com/allanrodriguesmachado/UniPonto/blob/main/.github/favicon.png" width="30px" /> UniPonto
 </h1>
 
-https://user-images.githubusercontent.com/54523516/200588136-429024fa-4829-4769-94c6-b92867e362c1.mp4
-
-
-<h3>📄 license</h3>
-
-This project is under the MIT license. See the [LICENSE](LICENSE.md) file for more details.
 
 ---
 <h3>🎖️ Author</h3>
